@@ -1,12 +1,11 @@
-import Navbar from './components/Navbar.jsx'
-import Landing from './pages/Landing.jsx'
+
+import Hero from './pages/Hero.jsx'
 
 function App() {
 
   return (
     <div className="App">
-      <Navbar />
-      <Landing />
+      <Hero />
     </div>
   )
 }
