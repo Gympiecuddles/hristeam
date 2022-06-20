@@ -5,26 +5,44 @@ import martha from '../assets/martha.jpg'
 import janina from '../assets/janina.jpg'
 import richard from '../assets/richard.jpg'
 
+import conversation from '../assets/conversation.jpg'
+
+const Hero = styled.div`
+    margin: 65px;
+    width: 100%;
+    height: 400px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 5%; left: 0;
+      width: 100%; 
+      height: 400px;
+      background-image: url(${conversation});
+      background-size: cover;
+      background-position: 50% 50%;
+      filter: brightness(45%);
+;
+      z-index: -1;
+    }
+    h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 400px;
+      font-size: 3.5em;
+      color: white;
+      text-shadow: 2px 2px 10px #4e4e4e;
+    }
+`;
+
 const TeamBox = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 300vh;
-    h2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 90px;
-      width: 100%;
-      height: 260px;
-      font-size: 5em;
-      color: white;
-      background-color: #4e4e4e;
-      text-shadow: 2px 2px 10px #4e4e4e;
-      box-shadow: 5px 5px 10px #c5c5c5;
-    }
+    height: 310vh;
     article {
       display: flex;
       flex-direction: column;
@@ -109,24 +127,10 @@ const TeamBox = styled.section`
 export default function Team() {
   return (
     <TeamBox>
-      <h2>Our Team</h2>
+      <Hero>
+        <h2>Our Team</h2>
+      </Hero>  
       <article>
-        <span>
-          <div />
-          <img src={janina} alt="Janina Fowler" />
-          <h3>Janina <b>Fowler</b></h3>
-          <h4>Director of Opperations</h4>
-          <p>test As a contrast to more elaborate designs we’ll see later in this list, 
-            Philly Reps is another agency that takes a cleaner, 
-            more minimal approach to its team page. Members are presented 
-            in grayscale images that take up the majority of screen space 
-            for a nice consistent look and feel. test</p> 
-          <ul>
-            <li>General Opperations</li>
-            <li>Seminar Orginization</li>
-            <li>Customer Service</li>  
-          </ul>       
-        </span>
         <span>
           <div />
           <img src={martha} alt="Martha" />
@@ -142,6 +146,22 @@ export default function Team() {
             <li>Seminar Orginization</li>
             <li>Customer Service</li>  
           </ul>  
+        </span>
+        <span>
+          <div />
+          <img src={janina} alt="Janina Fowler" />
+          <h3>Janina <b>Fowler</b></h3>
+          <h4>Director of Opperations</h4>
+          <p>test As a contrast to more elaborate designs we’ll see later in this list, 
+            Philly Reps is another agency that takes a cleaner, 
+            more minimal approach to its team page. Members are presented 
+            in grayscale images that take up the majority of screen space 
+            for a nice consistent look and feel. test</p> 
+          <ul>
+            <li>General Opperations</li>
+            <li>Seminar Orginization</li>
+            <li>Customer Service</li>  
+          </ul>       
         </span>
         <span>
           <div />

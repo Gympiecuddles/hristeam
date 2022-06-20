@@ -55,12 +55,12 @@ const LogoLink = styled(StyledLink)`
 export default function Navbar() {
   return (
     <NavBox>
-        <LogoLink to="/" whileHover={{ color: "#ff6c6c"}} >HRIS<div /><p>Team</p></LogoLink>
+        <LogoLink to="/" whileHover={{ color: "#da4a1f"}} >HRIS<div /><p>Team</p></LogoLink>
         <span>
-            <StyledLink to="/" whileHover={{ color: "#ff6c6c"}}>Home</StyledLink>
-            <StyledLink to="/services" whileHover={{ color: "#ff6c6c"}}>Services</StyledLink>
-            <StyledLink to="/team" whileHover={{ color: "#ff6c6c"}}>Team</StyledLink>
-            <StyledLink to="/contact" whileHover={{ color: "#ff6c6c"}}>Contact us</StyledLink>
+            <StyledLink to="/" whileHover={{ color: "#da4a1f"}}>Home</StyledLink>
+            <StyledLink to="/services" whileHover={{ color: "#da4a1f"}}>Services</StyledLink>
+            <StyledLink to="/team" whileHover={{ color: "#da4a1f"}}>Team</StyledLink>
+            <StyledLink to="/contact" whileHover={{ color: "#da4a1f"}}>Contact us</StyledLink>
         </span>
     </NavBox>
   )

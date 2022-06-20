@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import conversation from '../assets/conversation.jpg'
+import Button from '../components/Button';
 
 const ServiceBox = styled.section`
   display: flex;
@@ -235,6 +236,7 @@ export default function Services() {
             HR Construction routinely offers accelerated schedule options as well.
           </p>
       </Row5>
+      <Button />
     </ServiceBox>
   )
 }
