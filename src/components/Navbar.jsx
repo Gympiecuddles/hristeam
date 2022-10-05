@@ -3,20 +3,23 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
+import Button from './Button'
+
+import logo from '../assets/logo.png'
+
 const NavBox = styled(motion.nav)`
     position: fixed;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 70px;
-    color:#ffffff;
-    background-color: black;
+    height: 100px;
+    color:#000000;
+    background-color: #ffffff;
     z-index: 3;
     span {
-        margin-right: 80px;
         display: flex;
         justify-content: space-between;
-        width: 500px;
+        width: 550px;
         list-style: none;
     }
 `;
@@ -27,22 +30,28 @@ const StyledLink = styled(MotionLink)`
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: white;
+    color: #000000;
+    font-size: 1.1em;
+    font-weight: 600;
     text-decoration: none;
 `;
 
 const LogoLink = styled(StyledLink)`
-    margin-left: 80px;
+    margin-left: 25px;
     display: flex;
     align-items: center;
-    width: 140px;
-    font-size: 2em;
+    width: 250px;
+    font-size: 2.7em;
+    img {
+        height: 60px;
+        width: 60px;
+    }
     div {
-        margin: 6px;
-        margin-top: 9px;
+        margin: 7px;
+        margin-top: 12px;
         width: 2px;
-        height: 25px;
-        background-color: white;
+        height: 35px;
+        background-color: #56adb9;
     }
     p {
         padding-top: 8px;
@@ -55,13 +64,14 @@ const LogoLink = styled(StyledLink)`
 export default function Navbar() {
   return (
     <NavBox>
-        <LogoLink to="/" whileHover={{ color: "#da4a1f"}} >HRIS<div /><p>Team</p></LogoLink>
+        <LogoLink to="/" whileHover={{ color: "#56adb9"}}><img src={logo} alt="logo"></img> HRIS<div /><p>Team</p></LogoLink>
         <span>
-            <StyledLink to="/" whileHover={{ color: "#da4a1f"}}>Home</StyledLink>
-            <StyledLink to="/services" whileHover={{ color: "#da4a1f"}}>Services</StyledLink>
-            <StyledLink to="/team" whileHover={{ color: "#da4a1f"}}>Team</StyledLink>
-            <StyledLink to="/contact" whileHover={{ color: "#da4a1f"}}>Contact us</StyledLink>
+            <StyledLink to="/" whileHover={{ color: "#56adb9"}}>Home</StyledLink>
+            <StyledLink to="/services" whileHover={{ color: "#56adb9"}}>Services</StyledLink>
+            <StyledLink to="/team" whileHover={{ color: "#56adb9"}}>Team</StyledLink>
+            <StyledLink to="/contact" whileHover={{ color: "#56adb9"}}>Contact us</StyledLink>
         </span>
+        <Button type="light" text="Book Us" />
     </NavBox>
   )
 }

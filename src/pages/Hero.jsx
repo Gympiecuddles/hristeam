@@ -5,50 +5,60 @@ import { motion } from 'framer-motion'
 import About from '../components/About'
 import Button from '../components/Button'
 import Newsletter from '../components/Newsletter'
+import MiniForm from '../components/MiniForm'
 
 import office from '../assets/office.jpg'
 
 const HeroBox = styled.section`
-  height: 90vh;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
   width: 100%;
-  div {
+  img {
+      position: absolute;
+      width: 100%;
+      height: 65vh;
+      filter: brightness(57%);
+      z-index: -1;
+    }
+`;
+
+const TextBox = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 90vh;
-    color: #d6d5c9;
-    img {
-      position: absolute;
-      width: 100%;
-      height: 90vh;
-      filter: brightness(40%);
-      z-index: -1;
-    }
+    align-items: flex-start;
+    width: 27%;
+    height: 60vh;
+    color: #ffffff;
     h2 {
-      font-size: 4em;
-      font-weight: 500;
-      letter-spacing: 6px;
+      font-size: 4.3em;
+      font-weight: 600;
+      letter-spacing: 2px;
+      line-height: 75px;
     }
     h6 {
-      margin: 40px;
-      font-size: 1.5em;
-      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      width: 95%;
+      font-size: 1.8em;
+      font-weight: 500;
     }
-  }
 `;
+
+
 
 export default function Hero() {
   return (
     <>
       <HeroBox>
-        <div>
-          <img src={office} />
-          <h2>Building Experiences Worth Repeating</h2>
-          <h6>Your nationwide full-service, general contracting company for fast-track commercial construction.</h6>
-          <Button />
-        </div>
+        <TextBox>
+          <h2>Navigate the road to HR Compliance</h2>
+          <h6>Providing leadership & employee training programs and HR investigations training.</h6>
+          <Button type="white" text="Our Services ➤" />
+        </TextBox>
+        <MiniForm />
+        <img src={office} />
       </HeroBox>
       <About />
       <Newsletter />

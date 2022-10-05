@@ -2,124 +2,207 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Button from './Button'
+import FormSection from './FormSection'
 
-import flowers from '../assets/11.png'
-import office from '../assets/office.jpg'
+import ServiceImg1 from '../assets/ServiceImg1.jpg'
+import ServiceImg2 from '../assets/ServiceImg2.jpg'
+import ServiceImg3 from '../assets/ServiceImg3.jpg'
+import Martha from '../assets/martha.jpg'
 
-const AboutBox = styled.section`
-    width: 100%;
-    height: 100vh;
-`;
-
-const Row1 = styled.article`
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 40vh;
-    p {
-      align-self: center;
-      width: 500px;
-      font-size: 1.5em;
-    }
-    img {
-      margin: 20px;
-      width: 530px;
-    }
-`;
-
-const Row2 = styled.article`
+const ServicesBox = styled.section`
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
-    height: 70vh;
-    background-color: #e0e0e0;
-    h3 {
-      margin-top: 25px;
-      font-size: 2.2em;
-      width: 50%;
-    }
-    p {
-      margin: 20px;
-      margin-bottom: 40px;
-      font-size: 1.7em;
-      width: 50%;
-    }
+    height: 137vh;
     div {
       display: flex;
       justify-content: center;
-      width: 50%;
-      height: 600px;
-      span {
+      height: 43vh;
+      width: 100%;
+      article {
         display: flex;
-        flex-direction: column;
-        margin: 20px;
+        margin-left: calc(-4% / 2 );
+        margin-right: calc(-4% / 2 );
+        max-width: 52%;
         img {
-          width: 400px;
-          height: 250px;
+          margin-top: 95px;
+          height: 69%;
+          max-width: 47%;
+          border-radius: 10px;
+          object-fit: fill;
         }
-        h4 {
-          margin-top: 5px;
-          margin-bottom: 5px;
-          width: 300px;
-          font-size: 1.5em;
-        }
-        p {
-          margin: 0;
-          width: 300px;
-          font-size: 1.3em;
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 36%;
+          height: 100%;
+          h6 {
+            font-size: 1.2em;
+            font-weight: 600;
+            span {
+              height: 20px;
+              width: 20px;
+              background-color: blue;
+              border-radius: 50%;
+            }
+          }
+          h3 {
+            margin-top: 20px;
+            font-size: 3.2em;
+            font-weight: 600;
+            letter-spacing: 1px;
+          }
+          p {
+            margin-top: 35px;
+            margin-bottom: 35px;
+            max-width: 90%;
+            font-size: 1.5em;
+          }
         }
       }
     }
 `;
 
+const ServiceBox2 = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  background-color: #f7f7f7;
+  article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    img {
+      margin: 60px;
+      height: 400px;
+      width: 400px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    div {
+      margin-left: 130px;
+      font-size: 2em;
+      p {
+        margin-bottom: 30px;
+        font-size: 1em;
+        font-weight: 600;
+      }
+      b {
+        font-size: .65em;
+        font-weight: 400;
+        p {
+          margin-top: 7px;
+          font-size: .65em;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+`;
+
+const ServiceBox3 = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+  article {
+    display: grid;
+    grid-template-columns: 53% 47%;
+    grid-template-rows: 1fr 55px 1fr;
+    width: 51%;
+    height: 60%;
+    h3 {
+      grid-area: 1/1/2/2;
+      font-size: 3.4em;
+      font-weight: 600;
+      line-height: 60px;
+    }
+    div {
+      grid-area: 1/2/2/3;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+    }
+    span {
+      grid-area: 3/1/4/3;
+      display: flex;
+      justify-content: space-between;
+      p {
+        width: 30%;
+        font-size: 1.9em;
+        font-weight: 600;
+      }
+    }
+  }
+`;
+
 export default function About() {
   return (
-    <AboutBox>
-      <Row1>
-        <p>Since our founding in 2001, every decision has been guided by our mission to help 
-            individuals create the life they want to live, while protecting their loved ones 
-            and planning their financial legacy. Offering access to a diverse portfolio of 
-            insurance, retirement, savings, and wealth-building strategies, our licensed agents 
-            across North America help guide individuals from where they are to where they want 
-            to be.</p>
-        <img src={flowers} alt="" />
-      </Row1>
-      <Row2>
-        <h3>Hear it from our customers</h3>
-        <p>More than twenty of the top global advertisers 
-          and hundreds of emerging brands and agencies 
-          depend on Traackr everyday to make smarter 
-          influencer marketing decisions.
-        </p>
+    <>
+      <ServicesBox>
         <div>
-          <span>
-            <img src={office} alt="" />
-            <h4>Revlon x Wonder Woman 1984</h4>
-            <p>Learn how Revlon delivered extraordinary results 
-              for its collection with the support of Traackr.
-            </p>
-          </span>
-          <span>
-            <img src={office} alt="" />
-            <h4>Eau Thermale Avène</h4>
-            <p>How skincare brand, Eau Thermale Avène harnessed 
-              traditional word-of-mouth marketing in a digital 
-              context using an “always-on” influencer strategy.
-            </p>
-          </span>
-          <span>
-            <img src={office} alt="" />
-            <h4>Traackr x Glossy: State of Influencer Marketing </h4>
-            <p>A deep-dive report about how top brands are building 
-              more successful, measurable, and integrated influencer 
-              marketing programs.
-            </p>
-          </span>
+          <article style={{justifyContent: "flex-start"}}>
+            <img src={ServiceImg1} alt="" />
+            <div style={{marginLeft: '210px'}}>
+              <h6><span></span>HR On-Call</h6>
+              <h3>Human Resource Consulting</h3>
+              <p>The cost effective way for you to quickly get answers to your most pressing HR questions and get the help you need whenever a complex employee situation arises</p>
+              <Button type="primary" text="Get A Consultation"></Button>
+            </div>
+          </article>
         </div>
-        <Button />
-      </Row2>
-    </AboutBox>
+        <div>
+          <article style={{justifyContent: "flex-end"}}>
+            <div style={{marginRight: '150px'}}>
+              <h6><span></span>HR Management Training</h6>
+              <h3>Training Programs</h3>
+              <p>HR training from basic, entry-level HR programs to learn the “do’s and don’ts” of regulatory compliance to strategic leadership and HR training for senior executives</p>
+              <Button type="primary" text="Get A Consultation"></Button>
+            </div>
+            <img src={ServiceImg2} alt="" />
+          </article>
+        </div>
+        <div>
+          <article style={{justifyContent: "flex-start"}}>
+            <img src={ServiceImg3} alt="" />
+            <div style={{marginLeft: '210px'}}>
+              <h6><span></span>Internal Investigations</h6>
+              <h3>Conduct Internal Investigations</h3>
+              <p>Guiding HR and internal investigators through the investigative process, from complaint intake of an employee relations issue, to interviewing witnesses and gathering evidence, to preparing a final investigation report that will hold up in court</p>
+              <Button type="primary" text="Get A Consultation"></Button>
+            </div>
+          </article>
+        </div>
+      </ServicesBox>
+      <ServiceBox2>
+        <article>
+          <img src={Martha} alt="Martha Fowler" />
+          <div>
+            <p>“We assist people and organizations to achieve measurable results through targeted, results-focused training and performance solutions.”</p>
+            <b>Martha Fowler<p>President & CEO</p></b>
+          </div>
+        </article>
+      </ServiceBox2>
+      <ServiceBox3>
+        <article>
+          <h3>HR Resource: Insider Advice on How to Conduct HR Investigations</h3>
+          <div>
+            <Button type="primary" text="Explore Resource" />
+          </div>
+          <span>
+            <p>How to Select HR and Employee Relations Investigators</p>
+            <p>HR Investigations: A Case for Case Management</p>
+            <p>Conducting Employee Relations Investigations: 2 More Strategies for Creating Consistent Internal Investigation Processes</p>
+          </span>
+        </article>
+      </ServiceBox3>
+      <FormSection />
+    </>
   )
 }

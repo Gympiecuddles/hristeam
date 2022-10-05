@@ -144,11 +144,11 @@ export default function Contact() {
       <ContactBox>
         <Form>
           <span>
-            <input placeholder="Your name" type="text" tabindex="1" required autofocus />
-            <input placeholder="Your Email Address" type="email" tabindex="2" required />
+            <input placeholder="Your name" type="text" tabIndex="1" required autoFocus />
+            <input placeholder="Your Email Address" type="email" tabIndex="2" required />
           </span>
           <span>
-            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required />
+            <input placeholder="Your Phone Number (optional)" type="tel" tabIndex="3" required />
             <select>
               <option value="How did you find us?">How did you find us?</option>
               <option value="google Search">Google Search</option>
@@ -156,7 +156,7 @@ export default function Contact() {
               <option value="Referral">Referral</option>
             </select>
           </span>
-            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+            <textarea placeholder="Type your message here...." tabIndex="4" required></textarea>
             <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
         </Form>
         <div />

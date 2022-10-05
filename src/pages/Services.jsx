@@ -1,15 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import FormSection from '../components/FormSection';
+
 import conversation from '../assets/conversation.jpg'
-import Button from '../components/Button';
 
 const ServiceBox = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 240vh;
+  height: 230vh;
 `;
 
 const Hero = styled.article`
@@ -179,64 +180,66 @@ const Row5 = styled.article`
 
 export default function Services() {
   return (
-    <ServiceBox>
-      <Hero>
-        <h2>Services</h2>
-        <img src={conversation} alt="hero img" />
-      </Hero>
-      <Row1>    
-          <h3><b>What</b> do we do?</h3>
-          <p>Since our founding in 2001, every decision has been guided by our mission to help 
-            individuals create the life they want to live, while protecting their loved ones 
-            and planning their financial legacy. Offering access to a diverse portfolio of 
-            insurance, retirement, savings, and wealth-building strategies, our licensed agents 
-            across North America help guide individuals from where they are to where they want 
-            to be.
-          </p>
-      </Row1>
-      <Row2>
-        <span>
-          <h3>Skilled Personnel</h3>
-          <p>Much of the ultimate success of a project stems from the productive planning 
-            and coordination that occurs between the general contractor, key subcontractors, 
-            and vendors during pre-construction. With our vast shared experience, 
-            HR Construction’s staff and trusted subcontractors make invaluable contributions 
-            to the owner and design teams both before and throughout the project.
-          </p>
-        </span>
-        <img src={conversation} alt="Img" />
-      </Row2>
-      <Row3>
-          <h3>Commitment to quality</h3>
-          <p>HR Construction’s team members care deeply about each project and each client. 
-            From our leadership team to our project managers, skilled staff, and valued 
-            subcontractors, we strive to be flexible, resourceful, and efficient from start 
-            to finish. Once the project is complete, we remain accessible and ready to react 
-            quickly to service and maintenance requests. We value the relationships with our 
-            clients, which is why a majority of our new work comes from existing clients year 
-            after year.
-          </p> 
-      </Row3>
-      <Row4>
-        <img src={conversation} alt="Img2" />
-        <span>
-          <h3>Value engineering & Cost Controls</h3>
-          <p>HR Construction delivers cost-effective and value-engineered design solutions if 
-            unforeseen budgetary conditions are encountered.  Clients often rely heavily on our 
-            thorough financial documentation and status reports to supplement their own internal 
-            or external reporting requirements.
-          </p>
-        </span>
-      </Row4>
-      <Row5>
-          <h3>Minimize disturbance</h3>
-          <p>HR Construction is resourceful and adept in creating a schedule that diminishes 
-            disturbance to our clients, their operations, and their customers.  In doing so, 
-            our clients are able to minimize possible revenue loss from renovation.  
-            HR Construction routinely offers accelerated schedule options as well.
-          </p>
-      </Row5>
-      <Button />
-    </ServiceBox>
+    <>
+      <ServiceBox>
+        <Hero>
+          <h2>Services</h2>
+          <img src={conversation} alt="hero img" />
+        </Hero>
+        <Row1>    
+            <h3><b>What</b> do we do?</h3>
+            <p>Since our founding in 2001, every decision has been guided by our mission to help 
+              individuals create the life they want to live, while protecting their loved ones 
+              and planning their financial legacy. Offering access to a diverse portfolio of 
+              insurance, retirement, savings, and wealth-building strategies, our licensed agents 
+              across North America help guide individuals from where they are to where they want 
+              to be.
+            </p>
+        </Row1>
+        <Row2>
+          <span>
+            <h3>Skilled Personnel</h3>
+            <p>Much of the ultimate success of a project stems from the productive planning 
+              and coordination that occurs between the general contractor, key subcontractors, 
+              and vendors during pre-construction. With our vast shared experience, 
+              HR Construction’s staff and trusted subcontractors make invaluable contributions 
+              to the owner and design teams both before and throughout the project.
+            </p>
+          </span>
+          <img src={conversation} alt="Img" />
+        </Row2>
+        <Row3>
+            <h3>Commitment to quality</h3>
+            <p>HR Construction’s team members care deeply about each project and each client. 
+              From our leadership team to our project managers, skilled staff, and valued 
+              subcontractors, we strive to be flexible, resourceful, and efficient from start 
+              to finish. Once the project is complete, we remain accessible and ready to react 
+              quickly to service and maintenance requests. We value the relationships with our 
+              clients, which is why a majority of our new work comes from existing clients year 
+              after year.
+            </p> 
+        </Row3>
+        <Row4>
+          <img src={conversation} alt="Img2" />
+          <span>
+            <h3>Value engineering & Cost Controls</h3>
+            <p>HR Construction delivers cost-effective and value-engineered design solutions if 
+              unforeseen budgetary conditions are encountered.  Clients often rely heavily on our 
+              thorough financial documentation and status reports to supplement their own internal 
+              or external reporting requirements.
+            </p>
+          </span>
+        </Row4>
+        <Row5>
+            <h3>Minimize disturbance</h3>
+            <p>HR Construction is resourceful and adept in creating a schedule that diminishes 
+              disturbance to our clients, their operations, and their customers.  In doing so, 
+              our clients are able to minimize possible revenue loss from renovation.  
+              HR Construction routinely offers accelerated schedule options as well.
+            </p>
+        </Row5>
+      </ServiceBox>
+      <FormSection />j
+    </>
   )
-}
+};

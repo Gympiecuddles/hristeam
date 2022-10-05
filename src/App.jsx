@@ -1,4 +1,3 @@
-
 import Hero from './pages/Hero.jsx'
 
 function App() {
