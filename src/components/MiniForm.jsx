@@ -11,7 +11,6 @@ const Form = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 210px;
     height: 700px;
     width: 330px;
     background-color: #ffffff;
