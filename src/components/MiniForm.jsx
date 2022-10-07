@@ -77,7 +77,7 @@ export default function MiniForm() {
           <h4>Need HR Help?</h4>
           <h6>Contact an HR Expert Today</h6>
           <form action="">
-            <input type="text" tabIndex="1" placeholder='Your Name*' required autoFocus/>
+            <input type="text" tabIndex="1" placeholder='Your Name*' required/>
             <input type="text" tabIndex="2" placeholder='Your Email*' required/>
             <input type="text" tabIndex="3" placeholder='Your Phone Number*'required/>
             <button type='submit'>Get A Callback</button>

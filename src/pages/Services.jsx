@@ -49,7 +49,7 @@ const Row1 = styled.article`
     h3 {
       margin-top: -20px;
       margin-bottom: 20px;
-      font-size: 2.7em;
+      font-size: 2.8em;
       b {
         font-weight: 700;
         color: #e3c446;
@@ -57,7 +57,7 @@ const Row1 = styled.article`
     }
     p {
       width: 40%;
-      font-size: 1em;
+      font-size: 1.2em;
       line-height: 24px;
     }
 `;
@@ -78,13 +78,13 @@ const Row2 = styled.article`
       margin-top: -25px;
       margin-bottom: 25px;
       width: 50%;
-      font-size: 2.7em;
+      font-size: 2.8em;
       font-weight: 500;
       color: #a5a5a5;
     }
     p{
       width: 50%;
-      font-size: 1em;
+      font-size: 1.2em;
       line-height: 24px;
     }
   }
@@ -108,7 +108,7 @@ const Row3 = styled.article`
     h3 {
       margin-top: -20px;
       margin-bottom: 20px;
-      font-size: 2em;
+      font-size: 2.5em;
       b {
         font-weight: 700;
         color: #e3c446;
@@ -116,7 +116,7 @@ const Row3 = styled.article`
     }
     p {
       width: 40%;
-      font-size: 1em;
+      font-size: 1.2em;
       line-height: 24px;
     }
 `;
@@ -143,7 +143,7 @@ const Row4 = styled.article`
     }
     p{
       width: 50%;
-      font-size: 1em;
+      font-size: 1.2em;
       line-height: 24px;
     }
   }
@@ -173,7 +173,7 @@ const Row5 = styled.article`
     }
     p {
       width: 50%;
-      font-size: 1em;
+      font-size: 1.2em;
       line-height: 24px;
     }
 `;
@@ -202,7 +202,7 @@ export default function Services() {
             <p>Much of the ultimate success of a project stems from the productive planning 
               and coordination that occurs between the general contractor, key subcontractors, 
               and vendors during pre-construction. With our vast shared experience, 
-              HR Construction’s staff and trusted subcontractors make invaluable contributions 
+              HRIS Team’s staff and trusted subcontractors make invaluable contributions 
               to the owner and design teams both before and throughout the project.
             </p>
           </span>
@@ -210,7 +210,7 @@ export default function Services() {
         </Row2>
         <Row3>
             <h3>Commitment to quality</h3>
-            <p>HR Construction’s team members care deeply about each project and each client. 
+            <p>HRIS Team’s team members care deeply about each project and each client. 
               From our leadership team to our project managers, skilled staff, and valued 
               subcontractors, we strive to be flexible, resourceful, and efficient from start 
               to finish. Once the project is complete, we remain accessible and ready to react 
@@ -223,7 +223,7 @@ export default function Services() {
           <img src={conversation} alt="Img2" />
           <span>
             <h3>Value engineering & Cost Controls</h3>
-            <p>HR Construction delivers cost-effective and value-engineered design solutions if 
+            <p>HRIS Team delivers cost-effective and value-engineered design solutions if 
               unforeseen budgetary conditions are encountered.  Clients often rely heavily on our 
               thorough financial documentation and status reports to supplement their own internal 
               or external reporting requirements.
@@ -232,10 +232,10 @@ export default function Services() {
         </Row4>
         <Row5>
             <h3>Minimize disturbance</h3>
-            <p>HR Construction is resourceful and adept in creating a schedule that diminishes 
+            <p>HRIS Team is resourceful and adept in creating a schedule that diminishes 
               disturbance to our clients, their operations, and their customers.  In doing so, 
               our clients are able to minimize possible revenue loss from renovation.  
-              HR Construction routinely offers accelerated schedule options as well.
+              HRIS Team routinely offers accelerated schedule options as well.
             </p>
         </Row5>
       </ServiceBox>

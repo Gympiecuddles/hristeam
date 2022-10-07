@@ -137,12 +137,11 @@ export default function Team() {
             <div />
             <img src={martha} alt="Martha" />
             <h3>Martha <b>Fowler</b></h3>
-            <h4>CEO</h4>
-            <p>test As a contrast to more elaborate designs we’ll see later in this list, 
-              Philly Reps is another agency that takes a cleaner, 
-              more minimal approach to its team page. Members are presented 
-              in grayscale images that take up the majority of screen space 
-              for a nice consistent look and feel. test</p>
+            <h4>President & CEO</h4>
+            <p>Manages and directs the company toward its primary goals and objectives. 
+              Oversees employment decisions at the executive level of the company. 
+              Leads a team of executives to consider major decisions including acquisitions, 
+              mergers, joint ventures, or large-scale expansion.</p>
             <ul>
               <li>General Opperations</li>
               <li>Seminar Orginization</li>
