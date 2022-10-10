@@ -177,6 +177,45 @@ const ServiceBox2 = styled.section`
       }
     }
   }
+  @media (max-width: 1852px) {
+    article {
+      width: 900px;
+      div {
+        font-size: 29px;
+      }
+    }
+  }
+  @media (max-width: 940px) {
+    article {
+      justify-content: center;
+      width: 800px;
+      div {
+        margin: 0px;
+      }
+    }
+  }
+  @media (max-width: 940px) {
+    height: 70vh;
+    article {
+      flex-direction: column;
+      width: 75%;
+    }
+  }
+  @media (max-width: 532px) {
+    article {
+      justify-content: center;
+      width: 800px;
+      img {
+        width: 85%;
+      }
+      div {
+        width: 85%;
+        p {
+          font-size: calc(.2vw + 24px);
+        }
+      }
+    }
+  }
 `;
 
 const ServiceBox3 = styled.section`
