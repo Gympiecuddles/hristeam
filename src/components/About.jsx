@@ -12,19 +12,20 @@ import Martha from '../assets/martha.jpg'
 const ServicesBox = styled.section`
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    height: 137vh;
+    height: 2000px;
     div {
       display: flex;
       justify-content: center;
-      height: 43vh;
+      height: 600px;
       width: 100%;
       article {
         display: flex;
         margin-left: calc(-4% / 2 );
         margin-right: calc(-4% / 2 );
-        max-width: 52%;
+        max-width: 1200px;
         img {
           margin-top: 95px;
           height: 69%;
@@ -63,6 +64,79 @@ const ServicesBox = styled.section`
         }
       }
     }
+    @media (max-width: 1254px) {
+      height: 3200px;
+      div {
+        height: 1000px;
+        article {
+          flex-direction: column-reverse;
+          align-items: center;
+          img {
+            order: 1;
+            margin-top: 80px;
+            height: 100%;
+            max-width: 100%;
+          }
+          div {
+            height: 80%;
+            width: 770px;
+            text-align: left;
+          }
+        }
+      }
+    }
+    @media (max-width: 836px) {
+      height: 2900px;
+      div {
+        align-items: flex-end;
+        height: 850px;
+        article {
+          img {
+            height: auto;
+            margin-top: 0px;
+            width: 85%;
+          }
+          div {
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 85%;
+            width: 85%;
+            h6 {
+              margin-top: 20px;
+            }
+            h3 {
+              font-size: calc(3vw + 24px);
+            }
+          }
+        }
+      }
+    }
+`;
+
+const ArticleLeft = styled.article`
+  justify-content: flex-start;
+  div {
+    margin-left: 210px;
+  }
+  @media (max-width: 1254px) {
+    div {
+      margin-left: 0px;
+    }
+  }
+`;
+
+const ArticleRight = styled.article`
+  justify-content: flex-end;
+  div {
+    margin-right: 150px;
+  }
+  @media (max-width: 1254px) {
+    justify-content: center;
+    div {
+      align-items: flex-start;
+      margin-right: 0px;
+    }
+  }
 `;
 
 const ServiceBox2 = styled.section`
@@ -147,37 +221,37 @@ export default function About() {
     <>
       <ServicesBox>
         <div>
-          <article style={{justifyContent: "flex-start"}}>
+          <ArticleLeft>
             <img src={ServiceImg1} alt="" />
-            <div style={{marginLeft: '210px'}}>
+            <div>
               <h6><span></span>HR On-Call</h6>
               <h3>Human Resource Consulting</h3>
               <p>The cost effective way for you to quickly get answers to your most pressing HR questions and get the help you need whenever a complex employee situation arises</p>
               <Button type="primary" text="Get A Consultation"></Button>
             </div>
-          </article>
+          </ArticleLeft>
         </div>
         <div>
-          <article style={{justifyContent: "flex-end"}}>
-            <div style={{marginRight: '150px'}}>
+          <ArticleRight>
+            <div>
               <h6><span></span>HR Management Training</h6>
               <h3>Training Programs</h3>
               <p>HR training from basic, entry-level HR programs to learn the “do’s and don’ts” of regulatory compliance to strategic leadership and HR training for senior executives</p>
               <Button type="primary" text="Get A Consultation"></Button>
             </div>
             <img src={ServiceImg2} alt="" />
-          </article>
+          </ArticleRight>
         </div>
-        <div>
-          <article style={{justifyContent: "flex-start"}}>
+        <div style={{height: "1010px"}}>
+          <ArticleLeft>
             <img src={ServiceImg3} alt="" />
-            <div style={{marginLeft: '210px'}}>
+            <div>
               <h6><span></span>Internal Investigations</h6>
               <h3>Conduct Internal Investigations</h3>
               <p>Guiding HR and internal investigators through the investigative process, from complaint intake of an employee relations issue, to interviewing witnesses and gathering evidence, to preparing a final investigation report that will hold up in court</p>
               <Button type="primary" text="Get A Consultation"></Button>
             </div>
-          </article>
+          </ArticleLeft>
         </div>
       </ServicesBox>
       <ServiceBox2>
