@@ -86,10 +86,10 @@ const ServicesBox = styled.section`
       }
     }
     @media (max-width: 836px) {
-      height: 2900px;
+      height: 2950px;
       div {
         align-items: flex-end;
-        height: 850px;
+        height: 950px;
         article {
           img {
             height: auto;
@@ -111,6 +111,16 @@ const ServicesBox = styled.section`
         }
       }
     }
+`;
+
+const DivFix = styled.div`
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  width: 100%;
+  @media (max-width: 1254px) {
+    height: "1010px"
+  }
 `;
 
 const ArticleLeft = styled.article`
@@ -228,7 +238,7 @@ const ServiceBox3 = styled.section`
     display: grid;
     grid-template-columns: 53% 47%;
     grid-template-rows: 1fr 55px 1fr;
-    width: 51%;
+    width: 1200px;
     height: 60%;
     h3 {
       grid-area: 1/1/2/2;
@@ -253,6 +263,41 @@ const ServiceBox3 = styled.section`
       }
     }
   }
+  @media (max-width: 1254px) {
+      article {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 80%;
+        width: 80%;
+        div {
+          margin-top: 50px;
+        }
+        span {
+          flex-direction: column;
+          p {
+            margin-top: 50px;
+            width: 500px;
+          }
+        }
+      }
+    }
+    @media (max-width: 1063px) {
+      height: calc(1000px - 5vw);
+    }
+    @media (max-width: 596px) {
+      height: calc(2200px - 200vw);
+      article {
+        h3 {
+          font-size: calc(28px + 5vw);
+        }
+        span {
+          p {
+            width: 100%;
+          }
+        }
+      }
+    }
 `;
 
 export default function About() {
@@ -281,7 +326,7 @@ export default function About() {
             <img src={ServiceImg2} alt="" />
           </ArticleRight>
         </div>
-        <div style={{height: "1010px"}}>
+        <DivFix>
           <ArticleLeft>
             <img src={ServiceImg3} alt="" />
             <div>
@@ -291,7 +336,7 @@ export default function About() {
               <Button type="primary" text="Get A Consultation"></Button>
             </div>
           </ArticleLeft>
-        </div>
+        </DivFix>
       </ServicesBox>
       <ServiceBox2>
         <article>
