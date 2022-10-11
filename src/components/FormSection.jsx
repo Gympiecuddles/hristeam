@@ -7,13 +7,13 @@ const ServiceBox4 = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 78vh;
+  height: 1100px;
   width: 100%;
   background-color: #000000;
   article {
     display: flex;
-    width: 52%;
-    height: 90%;
+    height: 1000px;
+    width: 1200px;
     span {
       display: flex;
       flex-direction: column;
@@ -46,6 +46,58 @@ const ServiceBox4 = styled.section`
     }
     div {
       margin: 50px;
+    }
+  }
+  @media (max-width: 1254px) {
+    article {
+      width: 90%;
+      span {
+        width: 60%;
+      }
+      div {
+        margin: 0px;
+        margin-top: 50px;
+      }
+    }
+  }
+  @media (max-width: 1090px) {
+    height: calc(1400px - 5vw);
+    article {
+      height: calc(1400px - 5vw);
+      span {
+        h3 {
+          font-size: calc(20px + 4vw);
+        }
+      }
+      div {
+        margin-top: 110px;
+        margin-right: -20px;
+      }
+    }
+  }
+  @media (max-width: 836px) {
+    height: calc(2200px - 70vw);
+    article {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: calc(2200px - 70vw);
+      span {
+        width: 90%;
+        h3 {
+         
+        }
+      }
+      div {
+        margin-top: 30px;
+        margin-right: 0;
+      }
+    }
+  }
+  @media (max-width: 406px) {
+    height: 2100px;
+    article {
+      height: 2100px;
     }
   }
 `;
