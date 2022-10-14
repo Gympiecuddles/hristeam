@@ -11,6 +11,10 @@ const NewsBox = styled(motion.article)`
     display: flex;
     width: 350px;
     height: 300px;
+    z-index: 1;
+    @media (max-width: 1172px) {
+        display: none;
+    }
 `;
 
 const NewsButton = styled(motion.div)`

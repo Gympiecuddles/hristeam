@@ -10,7 +10,13 @@ const ServiceBox = styled.section`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 230vh;
+  height: calc(3700px - 30vw);
+  @media (max-width: 1772px) {
+    height: calc(3300px - 18vw)
+  }
+  @media (max-width: 694px) {
+    height: calc(5200px - 230vw)
+  }
 `;
 
 const Hero = styled.article`
@@ -60,6 +66,21 @@ const Row1 = styled.article`
       font-size: 1.2em;
       line-height: 24px;
     }
+  @media (max-width: 1376px) {
+    p {
+      width: 560px;
+    }
+  }
+  @media (max-width: 694px) {
+    height: calc(1000px - 60vw);
+    h3 {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    p {
+      width: 80%;
+    }
+  }
 `;
 
 const Row2 = styled.article`
@@ -93,6 +114,40 @@ const Row2 = styled.article`
     height: 100%;
     object-fit: cover;
   }
+  @media (max-width: 1376px) {
+    span {
+      h3 {
+        width: 350px;
+      }
+      p {
+        width: 350px;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    span {
+      text-align: center;
+      h3 {
+        width: 80%;
+      }
+      p {
+        width: 80%;
+      }
+    }
+  }
+  @media (max-width: 694px) {
+    flex-direction: column;
+    height: 1000px;
+    span {
+      order: 2;
+      width: 100%;
+      height: calc(2000px - 200vw);
+    }
+    img {
+      order: 1;
+      width: 100%;
+    }
+  }
 `;
 
 const Row3 = styled.article`
@@ -119,6 +174,21 @@ const Row3 = styled.article`
       font-size: 1.2em;
       line-height: 24px;
     }
+  @media (max-width: 1376px) {
+    p {
+      width: 560px;
+    }
+  }
+  @media (max-width: 694px) {
+    height: calc(1000px - 60vw);
+    h3 {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    p {
+      width: 80%;
+    }
+  }
 `;
 
 const Row4 = styled.article`
@@ -149,8 +219,42 @@ const Row4 = styled.article`
   }
   img {
     width: 50%;
-    height: 600px;
+    height: 100%;
     object-fit: cover;
+  }
+  @media (max-width: 1376px) {
+    span {
+      h3 {
+        width: 350px;
+      }
+      p {
+        width: 350px;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    span {
+      h3 {
+        width: 80%;
+      }
+      p {
+        width: 80%;
+      }
+    }
+  }
+  @media (max-width: 694px) {
+    flex-direction: column;
+    height: 1000px;
+    span {
+      order: 2;
+      width: 100%;
+      height: calc(2000px - 200vw);
+      text-align: center;
+    }
+    img {
+      order: 1;
+      width: 100%;
+    }
   }
 `;
 
@@ -172,10 +276,25 @@ const Row5 = styled.article`
       }
     }
     p {
-      width: 50%;
+      width: 40%;
       font-size: 1.2em;
       line-height: 24px;
     }
+  @media (max-width: 1376px) {
+    p {
+      width: 560px;
+    }
+  }
+  @media (max-width: 694px) {
+    height: calc(700px - 20vw);
+    h3 {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    p {
+      width: 80%;
+    }
+  }
 `;
 
 export default function Services() {
@@ -239,7 +358,7 @@ export default function Services() {
             </p>
         </Row5>
       </ServiceBox>
-      <FormSection />j
+      <FormSection />
     </>
   )
 };

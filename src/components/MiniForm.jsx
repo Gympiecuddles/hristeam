@@ -23,7 +23,7 @@ const Form = styled.div`
       height: 100px;
       width: 100px;
       filter: none;
-      z-index: 1;
+      z-index: 0;
     }
     h4 {
       font-size: 1.5em;
@@ -64,6 +64,11 @@ const Form = styled.div`
         font-size: 14px;
         color: #747373;
       }
+    }
+  }
+  @media ( max-width: 405px) {
+    div {
+      width: calc(110px + 50vw);
     }
   }
 `;

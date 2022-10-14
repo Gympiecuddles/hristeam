@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import App from './App'
 import Navbar from './components/Navbar'
+import Newsletter from './components/Newsletter'
 import ScrollToTop from './components/ScrollToTop'
 import Services from './pages/Services'
 import Team from './pages/Team'
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
     <Navbar />
     <ScrollToTop>
+      <Newsletter />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/services" element={<Services />} />

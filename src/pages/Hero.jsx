@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 
 import About from '../components/About'
 import Button from '../components/Button'
-import Newsletter from '../components/Newsletter'
 import MiniForm from '../components/MiniForm'
 
 import office from '../assets/office.jpg'
@@ -119,7 +118,6 @@ export default function Hero() {
         <img src={office} />
       </HeroBox>
       <About />
-      <Newsletter />
     </>
   )
 }
