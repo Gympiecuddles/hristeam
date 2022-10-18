@@ -7,10 +7,10 @@ const ContactPage = styled.section`
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 101vh;
+    height: 1350px;
     h2 {
       position: absolute;
-      top: 33%;
+      top: 425px;
       font-size: 125px;
       letter-spacing: 5px;
       color: #eeeeee;
@@ -32,6 +32,62 @@ const ContactPage = styled.section`
       border-top: 2px solid #e3c446;
       background-color: #e3c446;
     }
+    @media (max-width: 1020px) {
+      h3 {
+        width: 900px;
+        font-size: 2.8em;
+      }
+      h3::after {
+        left: 46%;
+      }
+    }
+    @media (max-width: 880px) {
+      height: 1550px;
+      h3 {
+        width: 90vw;
+        font-size: calc(25px + 2vw);
+      }
+    }
+    @media (max-width: 838px) {
+      h3::after {
+        top: 30%;
+        left: 45%;
+      }
+      h2 {
+        top: 435px;
+      }
+    }
+    @media (max-width: 624px) {
+      height: 1750px;
+      h3::after {
+        top: 27%;
+        left: 44%;
+      }
+      h2 {
+        top: calc(500px - 22vw);
+        font-size: 20vw;
+      }
+    }
+    @media (max-width: 425px) {
+      h3::after {
+        top: 28.5%;
+        left: 42%;
+      }
+      h2 {
+        top: calc(500px - 19vw);
+        font-size: 20vw;
+      }
+    }
+    @media (max-width: 350px) {
+      h3::after {
+        top: 30%;
+        left: 40%;
+      }
+      h2 {
+        top: calc(500px - 16vw);
+        font-size: 20vw;
+      }
+    }
 `;
 
 const ContactBox = styled.article`
@@ -41,19 +97,26 @@ const ContactBox = styled.article`
     background-color: #ffffff;
     box-shadow: 0 10px 24px 0 #57617a1e;
     z-index: 1;
-    @media (max-width: 1200px) {
-      width: 840px;
-      height: 600px;
-      flex-direction: column;
-    }
     div {
       width: 1px;
       height: 100%;
       background-color: #dbdbdb;
-      @media (max-width: 1200px) {
+    }
+    @media (max-width: 1200px) {
+      width: 840px;
+      height: 600px;
+      flex-direction: column;
+      div {
         width: 100%;
-        height: 1px;
+        height: 10px;
       }
+    }
+    @media (max-width: 880px) {
+      width: 90vw;
+      height: 800px;
+    }
+    @media (max-width: 624px) {
+      height: 1100px;
     }
 `
 
@@ -112,6 +175,33 @@ const Form = styled.form`
       border: none;
       border-radius: 2px;
     }
+    @media (max-width: 1200px) {
+      height: 4300px;
+      padding-top: 15px;
+    }
+    @media (max-width: 880px) {
+      width: 90%;
+      span {
+        flex-direction: column;
+        margin: 0;
+        margin-left: 42px;
+        width: calc(90vw - 145px);
+        input {
+          margin-top: 15px;
+          width: calc(90vw - 124px);
+        }
+        select {
+          margin-top: 15px;
+          width: 202px;
+        }
+      }
+      textarea {
+        width: calc(90vw - 145px);
+      }
+    }
+    @media (max-width: 624px) {
+      height: 5000px;
+    }
 `;
 
 const Info = styled.span`
@@ -121,9 +211,6 @@ const Info = styled.span`
   margin-left: 80px;
   width: 30%;
   height: 100%;
-  @media (max-width: 1200px) {
-      flex-direction: row;
-    }
   h4 {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -133,6 +220,21 @@ const Info = styled.span`
   p {
     margin-bottom: 40px;
     font-size: 14px;
+  }
+  @media (max-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 17px;
+    width: 65%;
+    height: 8%;
+  }
+  @media (max-width: 800px) {
+    width: 95%;
+  }
+  @media (max-width: 624px) {
+    flex-direction: column;
+    height: 250px;
+    margin-left: 40px;
   }
 `;
 
@@ -161,12 +263,18 @@ export default function Contact() {
         </Form>
         <div />
         <Info>
-          <h4>Location</h4>
-          <p>Based in Delray Beach, FL</p>
-          <h4>Call Us</h4>
-          <p>+1 000 000 0000</p>
-          <h4>Email Us</h4>
-          <p>email@email.com</p>
+          <span>
+            <h4>Location</h4>
+            <p>Based in Delray Beach, FL</p>
+          </span>
+          <span>  
+            <h4>Call Us</h4>
+            <p>+1 000 000 0000</p>
+          </span>
+          <span>
+            <h4>Email Us</h4>
+            <p>email@email.com</p>
+          </span>
         </Info>
       </ContactBox>
     </ContactPage>
