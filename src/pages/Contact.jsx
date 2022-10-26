@@ -269,11 +269,11 @@ export default function Contact() {
           </span>
           <span>  
             <h4>Call Us</h4>
-            <p>+1 000 000 0000</p>
+            <p>+1 561 900 7525</p>
           </span>
           <span>
             <h4>Email Us</h4>
-            <p>email@email.com</p>
+            <p>HRISteam@gmail.com</p>
           </span>
         </Info>
       </ContactBox>

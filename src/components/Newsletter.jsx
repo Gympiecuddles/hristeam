@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
-import conversation from '../assets/conversation.jpg'
+import Newsletter1 from '../assets/Newsletter1.jpg'
 
 const NewsBox = styled(motion.article)`
     position: fixed;
@@ -19,15 +19,15 @@ const NewsBox = styled(motion.article)`
 
 const NewsButton = styled(motion.div)`
     width: 35px;
-    height: 296px;
-    background-color: #022f35;
-    border: 2px solid #edfdff;
+    height: 381px;
+    background-color: #56adb9;
+    border: 2px solid #56adb9;
     border-radius: 4px;
     cursor: pointer;
     h3 {
         padding: 6px;
         padding-top: 10px;
-        color: #edfdff;
+        color: #ffffff;
         writing-mode: vertical-lr;
         letter-spacing: 2px;
     }
@@ -35,27 +35,32 @@ const NewsButton = styled(motion.div)`
 
 const NewsContent = styled.div`
     width: 305px;
-    height: 300px;
+    height: 385px;
     background-color: #ffffff;
     img {
         width: 100%;
         height: 180px;
     }
-    p {
-        margin: 15px;
+    h6 {
+        margin: 10px;
         margin-top: 5px;
         margin-left: 25px;
         font-size: 20px;
+        font-weight: 500;
     }
-    p::after {
+    h6::after {
         content: "";
         position: absolute;
         top: 73.5%;
-        left: 20.2%;
-        width: 255px;
+        left: 18.2%;
+        width: 245px;
         height: 1px;
         border-top: 1px solid #56adb9;
         background-color: #56adb9;
+    }
+    p {
+        padding: 10px;
+        padding-left: 25px;
     }
     form {
         margin-left: 27px;
@@ -87,14 +92,15 @@ export default function Newsletter() {
   return (
     <NewsBox animate={collapsed ? "closed" : "open"} variants={collapseVariants}>
         <NewsButton 
-        whileHover={{ backgroundColor: '#696969' }} 
+        whileHover={{ backgroundColor: "#0d9caf", color: "#ffffff" }} 
         onClick={() => setCollapsed(collapsed => !collapsed)}
         >
-            <h3>Newsletter</h3>
+            <h3>HR Resource</h3>
         </NewsButton>
         <NewsContent>
-            <img src={conversation} />
-            <p>Sign up for our newsletter!</p>
+            <img src={Newsletter1} />
+            <h6>Sign up for our newsletter!</h6>
+            <p>HR Resource is an "all thing's" HR newsletter with industry veteran insight's into the essentials</p>
             <form>
                 <input placeholder="Email" type="email" required />
                 <motion.button whileHover={{ backgroundColor: '#198796' }} type='submit'>Submit</motion.button>

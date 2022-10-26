@@ -6,7 +6,7 @@ import FormSection from '../components/FormSection'
 import martha from '../assets/martha.jpg'
 import janina from '../assets/janina.jpg'
 import richard from '../assets/richard.jpg'
-import conversation from '../assets/conversation.jpg'
+import Team1 from '../assets/Team1.jpg'
 
 const Hero = styled.div`
     margin: 65px;
@@ -18,10 +18,10 @@ const Hero = styled.div`
       top: 5%; left: 0;
       width: 100%; 
       height: 400px;
-      background-image: url(${conversation});
+      background-image: url(${Team1});
       background-size: cover;
       background-position: 50% 50%;
-      filter: brightness(45%);
+      filter: brightness(55%);
 ;
       z-index: -1;
     }
@@ -218,7 +218,7 @@ const TeamBox = styled.section`
             b {
               margin-left: -190px;
             }
-          }
+          } 
           div {
            height: 800px;
           }
@@ -250,15 +250,15 @@ export default function Team() {
             <div />
             <img src={martha} alt="Martha" />
             <h3>Martha <b>Fowler</b></h3>
-            <h4>President & CEO</h4>
+            <h4>Founder & CEO</h4>
             <p>Manages and directs the company toward its primary goals and objectives. 
               Oversees employment decisions at the executive level of the company. 
               Leads a team of executives to consider major decisions including acquisitions, 
               mergers, joint ventures, or large-scale expansion.</p>
             <ul>
-              <li>General Opperations</li>
-              <li>Seminar Orginization</li>
-              <li>Customer Service</li>  
+              <li>Business Strategy & Planning</li>
+              <li>Management Operations</li>
+              <li>Risk Management</li>  
             </ul>  
           </span>
           <span>
@@ -266,15 +266,11 @@ export default function Team() {
             <img src={janina} alt="Janina Fowler" />
             <h3>Janina <b>Fowler</b></h3>
             <h4>Director of Opperations</h4>
-            <p>test As a contrast to more elaborate designs we’ll see later in this list, 
-              Philly Reps is another agency that takes a cleaner, 
-              more minimal approach to its team page. Members are presented 
-              in grayscale images that take up the majority of screen space 
-              for a nice consistent look and feel. test</p> 
+            <p>Reviews, analyzes, and evaluates business procedures. Implements policies and procedures that will improve day-to-day operations. Ensures work environments are adequate and safe. Oversees training, relations resolution, and sales departments, ensuring each is reaching goals set by departmental and company leadership.</p> 
             <ul>
-              <li>General Opperations</li>
-              <li>Seminar Orginization</li>
-              <li>Customer Service</li>  
+              <li>Project Management</li>
+              <li>Performance Tracking</li>
+              <li>Optimize business workflows</li>  
             </ul>       
           </span>
           <span>
@@ -282,15 +278,11 @@ export default function Team() {
             <img src={richard} alt="Richard Schembri" />
             <h3>Richard <b>Schembri</b></h3>
             <h4>Technical Manager</h4>
-            <p>test As a contrast to more elaborate designs we’ll see later in this list, 
-              Philly Reps is another agency that takes a cleaner, 
-              more minimal approach to its team page. Members are presented 
-              in grayscale images that take up the majority of screen space 
-              for a nice consistent look and feel. test</p>
+            <p>Oversees the development, implementation and maintenance of technological company systems and processes, including troubleshooting any potential issues. Responsible for making key decisions that relate to continuous improvement within all areas of technical operations, and managing the technical team.</p>
             <ul>
-              <li>General Opperations</li>
-              <li>Seminar Orginization</li>
-              <li>Customer Service</li>  
+              <li>Technical system setup and maintainance</li>
+              <li>Website Development</li>
+              <li>Technical Team Onboarding</li>  
             </ul>  
           </span>
         </article>

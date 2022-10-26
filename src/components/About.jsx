@@ -153,7 +153,7 @@ const ServiceBox2 = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 650px;
   width: 100%;
   background-color: #f7f7f7;
   article {
@@ -205,7 +205,7 @@ const ServiceBox2 = styled.section`
     }
   }
   @media (max-width: 940px) {
-    height: 70vh;
+    height: 900px;
     article {
       flex-direction: column;
       width: 75%;

@@ -110,7 +110,7 @@ export default function FormSection() {
             <h3>Let’s Make Things Happen</h3>
             <p>To speak with one of our team members about our consulting, training, or investigative services or to register for one of our upcoming training programs, contact us today.</p>
             <i>“Thank you so much for the wonderful, custom program you developed for our Ethics team. It was so great that several team members have come up to me recently to say they have watched the recording of the investigations training at least 3 times to go back for more learning. We look forward to working together again on a project in the future!”</i>
-            <b>Martha Fowler<p>President & CEO</p></b>
+            <b>Wendy Evans<p>Senior Manager, Lockheed Martin Corporate Ethics</p></b>
           </span>
           <div>
             <MiniForm />

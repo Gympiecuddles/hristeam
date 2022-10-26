@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { motion } from 'framer-motion'
 
 import logo from '../assets/logo.png'
 
@@ -81,10 +82,10 @@ export default function MiniForm() {
           <h4>Need HR Help?</h4>
           <h6>Contact an HR Expert Today</h6>
           <form action="">
-            <input type="text" tabIndex="1" placeholder='Your Name*' required/>
-            <input type="text" tabIndex="2" placeholder='Your Email*' required/>
-            <input type="text" tabIndex="3" placeholder='Your Phone Number*'required/>
-            <button type='submit'>Get A Callback</button>
+            <input type="text" placeholder='Your Name*' required/>
+            <input type="text" placeholder='Your Email*' required/>
+            <input type="text" placeholder='Your Phone Number*'required/>
+            <motion.button whileHover={{backgroundColor: "#0d9caf", color: "#ffffff"}} type='submit'>Get A Callback</motion.button>
             <p>By submitting my data I agree to be contacted</p>
           </form>
         </div>

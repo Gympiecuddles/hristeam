@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom';
 
 import About from '../components/About'
-import Button from '../components/Button'
 import MiniForm from '../components/MiniForm'
 
-import office from '../assets/office.jpg'
+import Home1 from '../assets/Home1.jpg'
 
 const HeroBox = styled.section`
   display: flex;
@@ -101,7 +101,22 @@ const TextBox = styled.div`
     }
 `;
 
+const MotionButton = styled(Link)`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: #000000;
+    background-color: #fafafa; 
+`;
 
+const ServiceButton = motion(MotionButton);
 
 export default function Hero() {
   return (
@@ -111,11 +126,11 @@ export default function Hero() {
           <TextBox>
             <h2>Navigate the road to HR Compliance</h2>
             <h6>Providing leadership & employee training programs and HR investigations training.</h6>
-            <Button type="white" text="Our Services ➤" />
+            <ServiceButton to="/services" whileHover={{ backgroundColor: "#0d9caf", color: "#ffffff"}}>Our Services ➤</ServiceButton>
           </TextBox>
           <MiniForm />
         </ContentBox>  
-        <img src={office} />
+        <img src={Home1} />
       </HeroBox>
       <About />
     </>
