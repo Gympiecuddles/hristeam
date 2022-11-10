@@ -125,7 +125,7 @@ export default function Hero() {
         <ContentBox>
           <TextBox>
             <h2>Navigate the road to HR Compliance</h2>
-            <h6>Providing leadership & employee training programs and HR investigations training.</h6>
+            <h6>Providing innovative training for HR investigations for both leadership and employees across the world</h6>
             <ServiceButton to="/services" whileHover={{ backgroundColor: "#0d9caf", color: "#ffffff"}}>Our Services ➤</ServiceButton>
           </TextBox>
           <MiniForm />

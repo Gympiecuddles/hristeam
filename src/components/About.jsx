@@ -147,6 +147,12 @@ const ArticleRight = styled.article`
       margin-right: 0px;
     }
   }
+  @media (max-width: 600px) {
+    height: 800px;
+  }
+  @media (max-width: 540px) {
+    height: 780px;
+  }
 `;
 
 const ServiceBox2 = styled.section`

@@ -27,7 +27,7 @@ const NewsButton = styled(motion.div)`
     h3 {
         padding: 6px;
         padding-top: 10px;
-        color: #ffffff;
+        color: #f7f7f7d5;
         writing-mode: vertical-lr;
         letter-spacing: 2px;
     }
@@ -36,7 +36,7 @@ const NewsButton = styled(motion.div)`
 const NewsContent = styled.div`
     width: 305px;
     height: 385px;
-    background-color: #ffffff;
+    background-color: #fffefe;
     img {
         width: 100%;
         height: 180px;
