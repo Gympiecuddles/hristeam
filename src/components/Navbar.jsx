@@ -137,9 +137,9 @@ export default function Navbar() {
 
   return (
     <NavBox>
-        <LogoLink to="/" whileHover={{ color: "#56adb9"}}><img src={logo} alt="logo"></img> HRIS<div /><p>Team</p></LogoLink>
+        <LogoLink to="/hristeam" whileHover={{ color: "#56adb9"}}><img src={logo} alt="logo"></img> HRIS<div /><p>Team</p></LogoLink>
         <span>
-            <StyledLink to="/" whileHover={{ color: "#56adb9"}}>Home</StyledLink>
+            <StyledLink to="/hristeam" whileHover={{ color: "#56adb9"}}>Home</StyledLink>
             <StyledLink to="/services" whileHover={{ color: "#56adb9"}}>Services</StyledLink>
             <StyledLink to="/team" whileHover={{ color: "#56adb9"}}>Team</StyledLink>
             <StyledLink to="/contact" whileHover={{ color: "#56adb9"}}>Contact us</StyledLink>
