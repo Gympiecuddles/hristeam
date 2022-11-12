@@ -12,15 +12,15 @@ import Team from './pages/Team'
 import Contact from './pages/Contact'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <Router>
+  <Router basename='/'>
     <Navbar />
     <ScrollToTop>
       <Newsletter />
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route exact path="/" element={<App />} />
+        <Route exact path="/services" element={<Services />} />
+        <Route exact path="/team" element={<Team />} />
+        <Route exact path="/contact" element={<Contact />} />
       </Routes>
     </ScrollToTop>
   </Router>
