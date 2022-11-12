@@ -12,7 +12,7 @@ import Team from './pages/Team'
 import Contact from './pages/Contact'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <Router basename='/'>
+  <Router basename='/hristeam'>
     <Navbar />
     <ScrollToTop>
       <Newsletter />
