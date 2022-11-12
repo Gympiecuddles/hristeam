@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ScrollToTop>
       <Newsletter />
       <Routes>
-        <Route path="/hristeam" element={<App />} />
+        <Route path="/" element={<App />} />
         <Route path="/services" element={<Services />} />
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
