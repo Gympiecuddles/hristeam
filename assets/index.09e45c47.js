@@ -642,7 +642,7 @@ Error generating stack: `+o.message+`
     width: 100%;
     height: 100px;
     color:#000000;
-    background-color: #fca1a1;
+    background-color: #ffffff;
     z-index: 3;
     span {
         display: flex;
@@ -663,7 +663,7 @@ Error generating stack: `+o.message+`
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: #7700ff;
+    color: #000000;
     font-size: 1.1em;
     font-weight: 600;
     text-decoration: none;
