@@ -663,7 +663,7 @@ Error generating stack: `+o.message+`
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: #000000;
+    color: #7700ff;
     font-size: 1.1em;
     font-weight: 600;
     text-decoration: none;
