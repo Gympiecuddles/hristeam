@@ -15,7 +15,7 @@ const NavBox = styled(motion.nav)`
     width: 100%;
     height: 100px;
     color:#000000;
-    background-color: #fca1a1;
+    background-color: #ffffff;
     z-index: 3;
     span {
         display: flex;
